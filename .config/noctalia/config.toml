@@ -4,4 +4,4 @@ source = "builtin"
 builtin = "Catppuccin"
 
 [bar.main]
-position = "bottom"
+position = "top"

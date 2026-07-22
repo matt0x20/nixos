@@ -7,4 +7,5 @@
 
   programs.noctalia = {
     enable = true;
+  };
 }
