@@ -129,6 +129,7 @@
     kdePackages.dolphin
     polkit_gnome
     kdePackages.kdesu
+    appimage-run
   ];
 
 
