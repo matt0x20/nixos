@@ -39,6 +39,7 @@ hl.monitor({
 local terminal    = "kitty"
 local fileManager = "dolphin"
 local menu        = "hyprlauncher"
+local shell       = "noctalia"
 
 
 -------------------
@@ -50,11 +51,9 @@ local menu        = "hyprlauncher"
 -- Autostart necessary processes (like notifications daemons, status bars, etc.)
 -- Or execute your favorite apps at launch like this:
 --
--- hl.on("hyprland.start", function () 
---   hl.exec_cmd(terminal)
---   hl.exec_cmd("nm-applet")
---   hl.exec_cmd("waybar & hyprpaper & firefox")
--- end)
+hl.on("hyprland.start", function () 
+    hl.exec_cmd(shell)
+end)
 
 
 -------------------------------
@@ -234,7 +233,7 @@ hl.config({
         follow_mouse = 1,
 
         sensitivity = -0.2, -- -1.0 - 1.0, 0 means no modification.
-	accel_profile = "flat"
+	accel_profile = "flat",
 
         touchpad = {
             natural_scroll = false,

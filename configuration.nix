@@ -106,6 +106,7 @@
     vscodium
     btop
     pavucontrol
+    kdePackages.dolphin
   ];
 
 
