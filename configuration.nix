@@ -92,6 +92,7 @@
   };
 
   programs.firefox.enable = true;
+  services.flatpak.enable = true;
 
   security.polkit.enable = true;
   security.polkit.enablePkexecWrapper = true;
