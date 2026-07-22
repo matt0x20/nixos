@@ -92,6 +92,7 @@
   };
 
   programs.firefox.enable = true;
+  security.polkit.enable = true;
 
   # List packages installed in system profile.
   # You can use https://search.nixos.org/ to find more packages (and options).
@@ -107,6 +108,7 @@
     btop
     pavucontrol
     kdePackages.dolphin
+    polkit_gnome
   ];
 
 
