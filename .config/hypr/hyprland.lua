@@ -24,7 +24,7 @@
 
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
 hl.monitor({
-    output   = "DP-6",
+    output   = "DP-3",
     mode     = "2560x1440@180",
     position = "auto",
     scale    = "auto",
@@ -94,21 +94,20 @@ hl.env("HYPRCURSOR_SIZE", "24")
 -- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
 hl.config({
     general = {
-        gaps_in = 4,
-        gaps_out = 5,
+        gaps_in = 5,
+        gaps_out = 10,
         gaps_workspaces = 50,
 
         border_size = 1,
 
         col = {
-            active_border = "rgba(0DB7D455)",
+            active_border = "rgba(7f849c55)",
             inactive_border = "rgba(31313600)"
         },
 
         -- Set to true to enable resizing windows by clicking and dragging on borders and gaps
         resize_on_border = true,
 
-        -- Please see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Tearing/ before you turn this on
         allow_tearing = false,
 
         layout = "dwindle",

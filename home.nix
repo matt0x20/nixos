@@ -13,6 +13,7 @@
   home.packages = with pkgs; [
    discord
    gparted
+   pywalfox-native
   ];
 
   programs.home-manager.enable = true;
