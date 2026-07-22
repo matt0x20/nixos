@@ -18,6 +18,7 @@
   programs.home-manager.enable = true;
 
   home.file.".config/hypr".source = ./.config/hypr;
+  home.file.".config/noctalia".source = ./.config/noctalia;
 
   home.sessionPath = [
     "/run/current-system/sw/bin"
