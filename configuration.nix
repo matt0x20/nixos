@@ -130,9 +130,23 @@
     polkit_gnome
     kdePackages.kdesu
     appimage-run
+    nwg-look
+    adw-gtk3
+    kdePackages.qt6ct
   ];
 
-
+  fonts.packages = with pkgs; [
+    noto-fonts
+    noto-fonts-cjk-sans
+    noto-fonts-color-emoji
+    liberation_ttf
+    fira-code
+    fira-code-symbols
+    mplus-outline-fonts.githubRelease
+    dina-font
+    proggyfonts
+    adwaita-fonts
+  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
