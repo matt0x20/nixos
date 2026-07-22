@@ -17,7 +17,7 @@
 
   programs.home-manager.enable = true;
 
-  home.file.".config/hypr".source = ./dotfiles/hypr;
+  home.file.".config/hypr".source = ./.config/hypr;
 
   home.sessionPath = [
     "/run/current-system/sw/bin"
