@@ -40,6 +40,7 @@ local terminal    = "kitty"
 local fileManager = "dolphin"
 local menu        = "hyprlauncher"
 local shell       = "noctalia"
+local polkit      = "systemctl start --user polkit-gnome-authentication-agent-1"
 
 
 -------------------
@@ -53,6 +54,7 @@ local shell       = "noctalia"
 --
 hl.on("hyprland.start", function () 
     hl.exec_cmd(shell)
+    hl.exec_cmd(polkit)
 end)
 
 

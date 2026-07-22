@@ -94,6 +94,7 @@
   programs.firefox.enable = true;
 
   security.polkit.enable = true;
+  security.polkit.enablePkexecWrapper = true;
   systemd = {
     user.services.polkit-gnome-authentication-agent-1 = {
       description = "polkit-gnome-authentication-agent-1";
@@ -126,6 +127,7 @@
     pavucontrol
     kdePackages.dolphin
     polkit_gnome
+    kdePackages.kdesu
   ];
 
 
