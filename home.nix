@@ -48,7 +48,7 @@
     };
 
     cursorTheme = {
-      name = "Adwaita";
+      name = "macOS";
       package = pkgs.adwaita-icon-theme;
       size = 24;
     };
@@ -60,6 +60,11 @@
     gtk4.extraConfig = {
       gtk-application-prefer-dark-theme = 1;
     };
+  };
+
+  home.sessionVariables = {
+    XCURSOR_THEME = "macOS";
+    XCURSOR_SIZE = "24";
   };
 
   qt = {
