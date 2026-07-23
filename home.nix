@@ -17,6 +17,7 @@
    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
    fetch
    gearlever
+   ddcutil
   ];
 
   programs.home-manager.enable = true;

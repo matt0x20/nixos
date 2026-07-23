@@ -20,6 +20,8 @@ hl.config({
         allow_tearing = false,
 
         layout = "dwindle",
+
+        max_fps = 180,
     },
 
     decoration = {
@@ -54,6 +56,10 @@ hl.config({
 
     master = {
         new_status = "master",
+    },
+
+    misc = {
+        vrr = 0,
     },
 })
 
