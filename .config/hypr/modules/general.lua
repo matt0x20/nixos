@@ -20,8 +20,6 @@ hl.config({
         allow_tearing = false,
 
         layout = "dwindle",
-
-        max_fps = 180,
     },
 
     decoration = {
