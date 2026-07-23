@@ -18,6 +18,7 @@
    fetch
    gearlever
    ddcutil
+   equicord
   ];
 
   programs.home-manager.enable = true;
