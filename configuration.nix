@@ -101,6 +101,11 @@
   services.udisks2.enable = true;
   programs.nautilus-open-any-terminal.enable = true;
 
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "matt" ];
+  virtualisation.virtualbox.host.enableExtensionPack = true;
+  virtualisation.virtualbox.guest.dragAndDrop = true;
+
   security.polkit.enable = true;
   security.polkit.enablePkexecWrapper = true;
   systemd = {
