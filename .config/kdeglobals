@@ -1,11 +1,8 @@
 [UiSettings]
-ColorScheme=qt6ct
+ColorScheme=qt5ct
 
 [UiSettings]
 ColorScheme=*
-
-[Icons]
-Theme=Breeze-Dark
 
 [Colors:View]
 BackgroundNormal=#00000000
