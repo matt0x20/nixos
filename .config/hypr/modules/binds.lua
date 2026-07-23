@@ -9,18 +9,20 @@ local fileManager = "nautilus"
 local menu = "noctalia msg panel-toggle launcher"
 local regionScreenshot = "noctalia msg screenshot-region"
 local screenshot = "noctalia msg screenshot-fullscreen"
+local clipboard = "noctalia msg panel-open clipboard"
 
 hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
 local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
 
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
-hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
+hl.bind(mainMod .. " + ALT", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
 
 hl.bind("Print", hl.dsp.exec_cmd(screenshot))
 hl.bind("CTRL + Print", hl.dsp.exec_cmd(regionScreenshot))
+hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(clipboard))
 
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))

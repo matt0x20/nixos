@@ -39,6 +39,8 @@ hl.window_rule({ match = { float = false, workspace = "f[1]" }, border_size = 0 
 hl.window_rule({ match = { float = false, workspace = "f[1]" }, rounding = 0 })
 
 hl.window_rule({ match = { class = "zen" }, workspace = "2" })
+hl.window_rule({ match = { class = "firefox" }, workspace = "2" })
+hl.window_rule({ match = { class = "chromium" }, workspace = "2" })
 hl.window_rule({ match = { class = "discord" }, workspace = "3" })
 
-hl.workspace_rule({ workspace = "3", float = true })
+hl.window_rule({ match = { workspace = "3" }, float = true })
