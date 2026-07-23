@@ -62,7 +62,6 @@
 
   qt = {
     enable = true;
-    platformTheme.name = "qt6ct";
-    style.name = "adwaita-dark";
+    platformTheme.name = "qtct";
   };
 }
