@@ -1,11 +1,11 @@
 [UiSettings]
 ColorScheme=qt5ct
 
-[UiSettings]
-ColorScheme=*
-
 [Colors:View]
 BackgroundNormal=#00000000
 
 [General]
 TerminalApplication=kitty
+
+[Icons]
+Theme=breeze-dark

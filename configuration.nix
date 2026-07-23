@@ -140,6 +140,7 @@
     kdePackages.kdegraphics-thumbnailers 
     kdePackages.breeze-icons
     kdePackages.breeze
+    darkly
   ];
 
   fonts.packages = with pkgs; [
