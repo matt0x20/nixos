@@ -142,6 +142,9 @@
     kdePackages.breeze
     darkly
     nautilus
+    xdg-desktop-portal
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-hyprland
   ];
 
   fonts.packages = with pkgs; [
@@ -156,6 +159,15 @@
     proggyfonts
     adwaita-fonts
   ];
+
+  xdg.portal = {
+    enable = true;
+  
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-gtk
+      xdg-desktop-portal-hyprland
+    ];
+};
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
