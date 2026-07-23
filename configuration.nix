@@ -101,6 +101,8 @@
   services.gvfs.enable = true;
   services.udisks2.enable = true;
   programs.nautilus-open-any-terminal.enable = true;
+  programs.steam.enable = true;
+
 
   virtualisation.virtualbox.host.enable = true;
   users.extraGroups.vboxusers.members = [ "matt" ];
