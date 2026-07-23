@@ -25,6 +25,9 @@
   home.file.".config/noctalia".source = ./.config/noctalia;
   home.file.".config/kdeglobals".source = ./.config/kdeglobals;
   home.file.".config/dolphinrc".source = ./.config/dolphinrc;
+  home.file.".config/kitty/kitty.conf".source = ./.config/kitty/kitty.conf;
+  home.file.".config/kitty/scroll_mark.py".source = ./.config/kitty/scroll_mark.py;
+  home.file.".config/kitty/search.py".source = ./.config/kitty/search.py;
 
   home.sessionPath = [
     "/run/current-system/sw/bin"
@@ -52,7 +55,7 @@
     cursorTheme = {
       name = "macOS";
       package = pkgs.adwaita-icon-theme;
-      size = 24;
+      size = 24;.config/kitty/kitty.conf
     };
 
     gtk3.extraConfig = {
