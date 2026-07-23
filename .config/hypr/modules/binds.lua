@@ -13,7 +13,7 @@ local regionScreenshot = "noctalia msg screenshot-region"
 local screenshot = "noctalia msg screenshot-fullscreen"
 local clipboard = "noctalia msg panel-toggle clipboard"
 local lock = "noctalia msg session lock"
-local power = "noctalia msg panel-open session"
+local power = "noctalia msg panel-toggle session"
 
 hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
 local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())

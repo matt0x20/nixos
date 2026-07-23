@@ -106,7 +106,7 @@
   services.udisks2.enable = true;
   programs.nautilus-open-any-terminal.enable = true;
   programs.steam.enable = true;
-
+  services.hardware.openrgb.enable = true;
 
   virtualisation.virtualbox.host.enable = true;
   users.extraGroups.vboxusers.members = [ "matt" ];
@@ -177,6 +177,7 @@
     wineWow64Packages.staging
     winetricks
     wineWow64Packages.waylandFull
+    openrgb
   ];
 
   fonts.packages = with pkgs; [
