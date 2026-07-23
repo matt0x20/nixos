@@ -5,7 +5,7 @@
 local mainMod = "SUPER"
 
 local terminal = "kitty"
-local fileManager = "nautilus"
+local fileManager = "nemo"
 local browser = "zen"
 
 local menu = "noctalia msg panel-toggle launcher"

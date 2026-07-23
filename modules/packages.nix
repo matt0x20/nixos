@@ -45,5 +45,6 @@
     winetricks
     wineWow64Packages.waylandFull
     openrgb
+    nemo
   ];
 }

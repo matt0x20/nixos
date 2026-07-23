@@ -25,13 +25,13 @@
       modules = [
         ./configuration.nix
 
-	home-manager.nixosModules.default
+	      home-manager.nixosModules.default
 
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
 
-	  home-manager.extraSpecialArgs = {
+	        home-manager.extraSpecialArgs = {
             inherit inputs;
           };
 
