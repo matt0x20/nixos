@@ -1,2 +1,14 @@
 [UiSettings]
-ColorScheme=qt6ctb
+ColorScheme=qt6ct
+
+[UiSettings]
+ColorScheme=colors
+
+[Icons]
+Theme=Breeze-Dark
+
+[Colors:View]
+BackgroundNormal=#00000000
+
+[General]
+TerminalApplication=kitty
