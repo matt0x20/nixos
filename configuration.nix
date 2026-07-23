@@ -151,6 +151,7 @@
     exfatprogs
     ntfs3g
     btrfs-progs
+    gnome-disk-utility
   ];
 
   fonts.packages = with pkgs; [
