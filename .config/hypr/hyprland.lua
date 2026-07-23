@@ -24,6 +24,7 @@
 
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
 hl.monitor({
+    output = "",
     mode     = "2560x1440@180",
     position = "auto",
     scale    = "auto",
@@ -63,6 +64,7 @@ end)
 
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Environment-variables/
 
+hl.env("GTK_THEME", "adw-gtk3-dark")
 hl.env("XCURSOR_SIZE", "24")
 hl.env("XCURSOR_THEME", "macOS")
 hl.env("HYPRCURSOR_SIZE", "24")
