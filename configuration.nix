@@ -186,12 +186,14 @@
     libpulseaudio
     udev
     vulkan-loader
-    xorg.libX11
-    xorg.libXext
-    xorg.libXrender
-    xorg.libXi
-    xorg.libXfixes
-    xorg.libXcursor
+    libX11
+    libXext
+    libXrender
+    libXi
+    libXfixes
+    libXcursor
+    pipewire
+    pipewire.lib
     gtk3
     glib
   ];
