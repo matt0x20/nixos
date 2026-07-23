@@ -193,7 +193,6 @@
     libXfixes
     libXcursor
     pipewire
-    pipewire.lib
     gtk3
     glib
   ];
