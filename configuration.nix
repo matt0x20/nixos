@@ -15,6 +15,7 @@
       ./modules/packages.nix
       ./modules/fonts.nix
       ./modules/bootloader.nix
+      ./modules/fish.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
