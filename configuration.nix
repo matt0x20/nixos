@@ -14,6 +14,11 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_zen;
   boot.loader.limine.maxGenerations = 6;
+  boot.loader.limine.extraConfig = ''
+    :Windows
+    protocol: efi
+    path: uuid(6f16bff5-058e-486f-a0a4-a4cf4e279be4):/EFI/Microsoft/Boot/bootmgfw.efi
+  '';
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
