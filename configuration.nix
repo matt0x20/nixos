@@ -92,6 +92,9 @@
 
   programs.firefox.enable = true;
   services.flatpak.enable = true;
+  services.gvfs.enable = true;
+  services.udisks2.enable = true;
+  programs.nautilus-open-any-terminal.enable = true;
 
   security.polkit.enable = true;
   security.polkit.enablePkexecWrapper = true;
@@ -145,6 +148,9 @@
     xdg-desktop-portal
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
+    exfatprogs
+    ntfs3g
+    btrfs-progss
   ];
 
   fonts.packages = with pkgs; [
@@ -167,6 +173,21 @@
       xdg-desktop-portal-gtk
       xdg-desktop-portal-hyprland
     ];
+  };
+
+  fileSystems."/mnt/OV1" = {
+    device = "/dev/sda1";
+    fsType = "btrfs";
+  };
+
+  fileSystems."/mnt/OV2" = {
+    device = "/dev/sdb2";
+    fsType = "exfat";
+  };
+
+  fileSystems."/mnt/LEXAR" = {
+    device = "/dev/nvme1n1p1";
+    fsType = "exfat";
   };
 
   # Some programs need SUID wrappers, can be configured further or are
