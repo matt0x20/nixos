@@ -18,6 +18,7 @@
 
   programs.home-manager.enable = true;
 
+  home.file.".icons".source = ./.icons;
   home.file.".config/hypr".source = ./.config/hypr;
   home.file.".config/noctalia".source = ./.config/noctalia;
 
@@ -61,7 +62,7 @@
 
   qt = {
     enable = true;
-    platformTheme.name = "gtk";
+    platformTheme.name = "qt6ct";
     style.name = "adwaita-dark";
   };
 }

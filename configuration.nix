@@ -41,6 +41,7 @@
 
   programs.hyprland.enable = true;
   services.displayManager.ly.enable = true;
+  environment.sessionVariables.QT_QPA_PLATFORMTHEME = "qt6ct";
 
   hardware.graphics = {
     enable = true;
@@ -133,6 +134,8 @@
     nwg-look
     adw-gtk3
     kdePackages.qt6ct
+    hyprcursor
+    xcur2png
   ];
 
   fonts.packages = with pkgs; [
