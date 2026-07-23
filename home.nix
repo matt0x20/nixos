@@ -18,11 +18,13 @@
    fetch
    gearlever
    ddcutil
+   arrpc
    equibop
   ];
 
   programs.home-manager.enable = true;
-  
+  services.arrpc.enable = true;
+
   home.file.".icons".source = ./.icons;
   home.file.".config/hypr".source = ./.config/hypr;
   home.file.".config/noctalia".source = ./.config/noctalia;
