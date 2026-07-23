@@ -13,6 +13,7 @@
   boot.loader.limine.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_zen;
+  boot.loader.limine.maxGenerations = 6
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -177,18 +178,21 @@
   };
 
   fileSystems."/mnt/OV1" = {
-    device = "/dev/sda1";
+    device = "/dev/disk/by-uuid/7b2c0b7e-e7d6-4522-8e69-567b9104f40e";
     fsType = "btrfs";
+    options = [ "defaults" "nofail" "x-gvfs-show" ];
   };
 
   fileSystems."/mnt/OV2" = {
-    device = "/dev/sdb2";
+    device = "/dev/disk/by-uuid/C690-A678";
     fsType = "exfat";
+    options = [ "defaults" "nofail" "x-gvfs-show" ];
   };
 
   fileSystems."/mnt/LEXAR" = {
-    device = "/dev/nvme1n1p1";
+    device = "/dev/disk/by-uuid/670B-C62C";
     fsType = "exfat";
+    options = [ "defaults" "nofail" "x-gvfs-show" ];
   };
 
   # Some programs need SUID wrappers, can be configured further or are
