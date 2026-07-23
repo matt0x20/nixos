@@ -24,7 +24,7 @@
 
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
 hl.monitor({
-    output   = "DP-3",
+    output   = "DP-6",
     mode     = "2560x1440@180",
     position = "auto",
     scale    = "auto",
@@ -66,6 +66,8 @@ end)
 
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
+hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
+
 
 
 -----------------------
