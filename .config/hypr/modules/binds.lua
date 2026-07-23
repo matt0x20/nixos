@@ -20,7 +20,7 @@ hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
 
 hl.bind("Print", hl.dsp.exec_cmd(screenshot))
-hl.bind("Ctrl + Print", hl.dsp.exec_cmd(regionScreenshot))
+hl.bind("CTRL + Print", hl.dsp.exec_cmd(regionScreenshot))
 
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
