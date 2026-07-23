@@ -16,6 +16,7 @@
    pywalfox-native
    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
    fetch
+   gearlever
   ];
 
   programs.home-manager.enable = true;

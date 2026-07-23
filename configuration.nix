@@ -158,6 +158,7 @@
     ntfs3g
     btrfs-progs
     gnome-disk-utility
+    gtk3
   ];
 
   fonts.packages = with pkgs; [
