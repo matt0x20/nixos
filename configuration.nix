@@ -100,7 +100,6 @@
   services.gvfs.enable = true;
   services.udisks2.enable = true;
   programs.nautilus-open-any-terminal.enable = true;
-  services.xembed-sniproxy.enable = true;
 
   security.polkit.enable = true;
   security.polkit.enablePkexecWrapper = true;
@@ -160,6 +159,12 @@
     gnome-disk-utility
     gtk3
     unzip
+    unrar
+
+    wineWow64Packages.stable
+    wineWow64Packages.staging
+    winetricks
+    wineWow64Packages.waylandFull
   ];
 
   fonts.packages = with pkgs; [
