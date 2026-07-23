@@ -13,7 +13,7 @@
   boot.loader.limine.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_zen;
-  boot.loader.limine.maxGenerations = 6
+  boot.loader.limine.maxGenerations = 6;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
