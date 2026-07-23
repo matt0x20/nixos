@@ -158,6 +158,7 @@
     btrfs-progs
     gnome-disk-utility
     gtk3
+    unzip
   ];
 
   fonts.packages = with pkgs; [
