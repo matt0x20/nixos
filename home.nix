@@ -55,7 +55,7 @@
     cursorTheme = {
       name = "macOS";
       package = pkgs.adwaita-icon-theme;
-      size = 24;.config/kitty/kitty.conf
+      size = 24;
     };
 
     gtk3.extraConfig = {
