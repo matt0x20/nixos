@@ -100,6 +100,7 @@
   services.gvfs.enable = true;
   services.udisks2.enable = true;
   programs.nautilus-open-any-terminal.enable = true;
+  services.xembed-sniproxy.enable = true;
 
   security.polkit.enable = true;
   security.polkit.enablePkexecWrapper = true;
