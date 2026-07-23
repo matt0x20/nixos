@@ -150,7 +150,7 @@
     xdg-desktop-portal-hyprland
     exfatprogs
     ntfs3g
-    btrfs-progss
+    btrfs-progs
   ];
 
   fonts.packages = with pkgs; [
