@@ -125,6 +125,7 @@
     vscodium
     btop
     pavucontrol
+    lxqt.pavucontrol-qt
     kdePackages.dolphin
     polkit_gnome
     kdePackages.kdesu
@@ -135,10 +136,9 @@
     libsForQt5.qt5ct
     hyprcursor
     xcur2png
-    libsForQt5.kio-extras
     kdePackages.qtsvg
-    libsForQt5.ffmpegthumbs
     kdePackages.kdegraphics-thumbnailers 
+    kdePackages.breeze-icons
   ];
 
   fonts.packages = with pkgs; [
