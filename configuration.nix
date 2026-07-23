@@ -173,6 +173,29 @@
     adwaita-fonts
   ];
 
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+    stdenv.cc.cc.lib
+    zlib
+    openssl
+    libGL
+    libglvnd
+    freetype
+    fontconfig
+    alsa-lib
+    libpulseaudio
+    udev
+    vulkan-loader
+    xorg.libX11
+    xorg.libXext
+    xorg.libXrender
+    xorg.libXi
+    xorg.libXfixes
+    xorg.libXcursor
+    gtk3
+    glib
+  ];
+
   xdg.portal = {
     enable = true;
   
