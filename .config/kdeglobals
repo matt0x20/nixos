@@ -2,7 +2,7 @@
 ColorScheme=qt6ct
 
 [UiSettings]
-ColorScheme=colors
+ColorScheme=*
 
 [Icons]
 Theme=Breeze-Dark
