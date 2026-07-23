@@ -24,7 +24,7 @@
 
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
 hl.monitor({
-    output   = "DP-6",
+    output   = "auto",
     mode     = "2560x1440@180",
     position = "auto",
     scale    = "auto",
