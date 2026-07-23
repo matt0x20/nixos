@@ -141,6 +141,7 @@
     kdePackages.breeze-icons
     kdePackages.breeze
     darkly
+    nautilus
   ];
 
   fonts.packages = with pkgs; [

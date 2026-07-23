@@ -64,11 +64,6 @@
 
   qt = {
     enable = true;
-    platformTheme.name = "qt5ct";
-  };
-
-  nixpkgs.config.qt5 = {
-    enable = true;
-    platformTheme = "qt5ct"; 
+    platformTheme.name = "qt6ct";
   };
 }
