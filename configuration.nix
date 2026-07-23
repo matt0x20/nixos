@@ -139,6 +139,7 @@
     kdePackages.qtsvg
     kdePackages.kdegraphics-thumbnailers 
     kdePackages.breeze-icons
+    kdePackages.breeze
   ];
 
   fonts.packages = with pkgs; [

@@ -21,6 +21,7 @@
   home.file.".icons".source = ./.icons;
   home.file.".config/hypr".source = ./.config/hypr;
   home.file.".config/noctalia".source = ./.config/noctalia;
+  home.file.".config/kdeglobals".source = ./.config/kdeglobals;
 
   home.sessionPath = [
     "/run/current-system/sw/bin"
