@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports = [
@@ -14,6 +14,8 @@
    discord
    gparted
    pywalfox-native
+   inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
+   fetch
   ];
 
   programs.home-manager.enable = true;
