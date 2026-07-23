@@ -135,6 +135,10 @@
     libsForQt5.qt5ct
     hyprcursor
     xcur2png
+    libsForQt5.kio-extras
+    kdePackages.qtsvg
+    libsForQt5.ffmpegthumbs
+    kdePackages.kdegraphics-thumbnailers 
   ];
 
   fonts.packages = with pkgs; [
