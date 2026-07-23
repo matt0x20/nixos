@@ -145,6 +145,7 @@
     xdg-desktop-portal
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
+    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
   fonts.packages = with pkgs; [
@@ -167,7 +168,7 @@
       xdg-desktop-portal-gtk
       xdg-desktop-portal-hyprland
     ];
-};
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
