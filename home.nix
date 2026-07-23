@@ -18,7 +18,7 @@
    fetch
    gearlever
    ddcutil
-   equicord
+   arrpc
   ];
 
   programs.home-manager.enable = true;
