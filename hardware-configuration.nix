@@ -28,4 +28,22 @@
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+
+    fileSystems."/mnt/OV1" = {
+    device = "/dev/disk/by-uuid/7b2c0b7e-e7d6-4522-8e69-567b9104f40e";
+    fsType = "btrfs";
+    options = [ "defaults" "nofail" "x-gvfs-show" ];
+  };
+
+  fileSystems."/mnt/OV2" = {
+    device = "/dev/disk/by-uuid/C690-A678";
+    fsType = "exfat";
+    options = [ "defaults" "nofail" "x-gvfs-show" ];
+  };
+
+  fileSystems."/mnt/LEXAR" = {
+    device = "/dev/disk/by-uuid/670B-C62C";
+    fsType = "exfat";
+    options = [ "defaults" "nofail" "x-gvfs-show" ];
+  };
 }

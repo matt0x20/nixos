@@ -7,6 +7,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./modules/nix-ld.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -165,7 +166,7 @@
     gtk3
     unzip
     unrar
-
+    (python3.withPackages (p: [ p.numpy p.requests p.pip p.cryptography ]))
     wineWow64Packages.stable
     wineWow64Packages.staging
     winetricks
@@ -185,30 +186,6 @@
     adwaita-fonts
   ];
 
-  programs.nix-ld.enable = true;
-  programs.nix-ld.libraries = with pkgs; [
-    stdenv.cc.cc.lib
-    zlib
-    openssl
-    libGL
-    libglvnd
-    freetype
-    fontconfig
-    alsa-lib
-    libpulseaudio
-    udev
-    vulkan-loader
-    libX11
-    libXext
-    libXrender
-    libXi
-    libXfixes
-    libXcursor
-    pipewire
-    gtk3
-    glib
-  ];
-
   xdg.portal = {
     enable = true;
   
@@ -216,24 +193,6 @@
       xdg-desktop-portal-gtk
       xdg-desktop-portal-hyprland
     ];
-  };
-
-  fileSystems."/mnt/OV1" = {
-    device = "/dev/disk/by-uuid/7b2c0b7e-e7d6-4522-8e69-567b9104f40e";
-    fsType = "btrfs";
-    options = [ "defaults" "nofail" "x-gvfs-show" ];
-  };
-
-  fileSystems."/mnt/OV2" = {
-    device = "/dev/disk/by-uuid/C690-A678";
-    fsType = "exfat";
-    options = [ "defaults" "nofail" "x-gvfs-show" ];
-  };
-
-  fileSystems."/mnt/LEXAR" = {
-    device = "/dev/disk/by-uuid/670B-C62C";
-    fsType = "exfat";
-    options = [ "defaults" "nofail" "x-gvfs-show" ];
   };
 
   # Some programs need SUID wrappers, can be configured further or are
