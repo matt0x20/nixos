@@ -8,6 +8,7 @@
     ./modules/user/gtk.nix
     ./modules/user/services.nix
     ./modules/user/sources.nix
+    ./modules/user/zen.nix
   ];
 
   home.username = "matt";
