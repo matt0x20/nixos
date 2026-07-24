@@ -37,7 +37,7 @@
     gtk3
     unzip
     unrar
-    (python3.withPackages (p: [ p.numpy p.requests p.pip p.cryptography ]))
+    (python3.withPackages (p: [ p.numpy p.requests p.pip p.cryptography p.pyqt6 ]))
     wineWow64Packages.stable
     wineWow64Packages.staging
     winetricks
@@ -60,6 +60,7 @@
     shared-mime-info
     desktop-file-utils
     fuse
+    jq
   ];
 
   virtualisation = {

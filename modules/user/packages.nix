@@ -10,6 +10,7 @@
    ddcutil
    arrpc
    equibop
+   anki-bin
   ];
 
   programs.home-manager.enable = true;
