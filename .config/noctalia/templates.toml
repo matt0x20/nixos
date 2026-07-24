@@ -3,5 +3,5 @@ builtin_ids = [ "gtk3", "gtk4", "kitty", "qt" ]
 community_ids = [ "pywalfox", "obsidian", "vscode" ]
 
 [theme.templates.user.kde]
-input_path = '$XDG_CONFIG_HOME/.config/noctalia/templates/kde.colors.template'
-output_path = '$XDG_CONFIG_HOME/.local/share/color-schemes/Noctalia.colors'
+input_path = '$XDG_CONFIG_HOME/noctalia/templates/kde.colors.template'
+output_path = '$XDG_DATA_HOME/color-schemes/Noctalia.colors'
