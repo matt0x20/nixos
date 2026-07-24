@@ -11,3 +11,7 @@ output_path = '~/.config/qt6ct/colors/matugen.conf'
 [templates.kde]
 input_path = '~/.config/matugen/kde.colors.template'
 output_path = '~/.local/share/color-schemes/Matugen.colors'
+
+[templates.noctalia]
+input_path = '~/.config/matugen/noctalia-pallete.json'
+output_path = '~/.config/noctalia/pallete/matugen.json'
