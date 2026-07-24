@@ -47,6 +47,22 @@
     distrobox
   ];
 
+  virtualisation = {
+    containers.enable = true;
+    podman = {
+      enable = true;
+      dockerCompat = true;
+      defaultNetwork.settings.dns_enabled = true;
+    };
+  };
+
+  users.users.matt = {
+    extraGroups = [
+      "podman"
+    ];
+  };
+
+
   programs.nautilus-open-any-terminal.enable = true;
   programs.steam.enable = true;
   programs.firefox.enable = true;
