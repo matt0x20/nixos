@@ -6,7 +6,7 @@
    gparted
    pywalfox-native
    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
-   inputs.matugen.packages.${system}.default
+   inputs.matugen.packages.${pkgs.stdenv.hostPlatform.system}.default
    fetch
    gearlever
    ddcutil

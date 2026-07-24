@@ -1,8 +1,5 @@
 [UiSettings]
-ColorScheme=qt6ct
-
-[Colors:View]
-BackgroundNormal=#00000000
+ColorScheme=Matugen
 
 [General]
 TerminalApplication=kitty
