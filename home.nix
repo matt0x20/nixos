@@ -8,7 +8,7 @@
     ./modules/user/gtk.nix
     ./modules/user/misc.nix
     ./modules/user/sources.nix
-    ./modules/user/matugen.nix
+    # ./modules/user/matugen.nix
   ];
 
   home.username = "matt";
