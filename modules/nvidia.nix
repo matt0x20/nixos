@@ -12,10 +12,14 @@
   
   hardware.nvidia = {
     modesetting.enable = true;
-    powerManagement.enable = false;
+    powerManagement.enable = true;
     powerManagement.finegrained = false;
     open = true;
     nvidiaSettings = true;
     package = config.boot.kernelPackages.nvidiaPackages.stable;
+  };
+
+  environment.sessionVariables = {
+  __GL_SYNC_TO_VBLANK = "0";
   };
 }
