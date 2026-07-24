@@ -56,6 +56,9 @@
     kdePackages.kdegraphics-thumbnailers
     kdePackages.breeze-icons
     kdePackages.gwenview
+    kdePackages.kimageformats
+    qt6.qtimageformats
+    libraw
     shared-mime-info
     shared-mime-info
     desktop-file-utils
