@@ -5,3 +5,11 @@ community_ids = [ "pywalfox", "obsidian", "vscode" ]
 [theme.templates.user.kde]
 input_path = '$XDG_CONFIG_HOME/noctalia/templates/kde.colors.template'
 output_path = '$XDG_DATA_HOME/color-schemes/Noctalia.colors'
+
+[theme.templates.user.qt5-fix]
+input_path = '$XDG_CONFIG_HOME/noctalia/templates/qt-template.conf'
+output_path = '$XDG_CONFIG_HOME/qt5ct/colors/noctalia-fix.conf'
+
+[theme.templates.user.qt6-fix]
+input_path = '$XDG_CONFIG_HOME/noctalia/templates/qt-template.conf'
+output_path = '$XDG_CONFIG_HOME/qt6ct/colors/noctalia-fix.conf'
