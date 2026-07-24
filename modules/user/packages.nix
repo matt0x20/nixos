@@ -12,4 +12,6 @@
    arrpc
    equibop
   ];
+
+  programs.home-manager.enable = true;
 }

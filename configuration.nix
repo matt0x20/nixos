@@ -9,7 +9,6 @@
       ./modules/networking.nix
       ./modules/nvidia.nix
       ./modules/pipewire.nix
-      ./modules/programs.nix
       ./modules/services.nix
       ./modules/polkit.nix
       ./modules/packages.nix

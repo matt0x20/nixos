@@ -6,7 +6,7 @@
     ./modules/user/packages.nix
     ./modules/user/env.nix
     ./modules/user/gtk.nix
-    ./modules/user/misc.nix
+    ./modules/user/services.nix
     ./modules/user/sources.nix
   ];
 
