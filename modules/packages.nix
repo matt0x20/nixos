@@ -12,7 +12,6 @@
     vscodium
     btop
     pavucontrol
-    lxqt.pavucontrol-qt
     kdePackages.dolphin
     polkit_gnome
     kdePackages.kdesu
@@ -45,6 +44,8 @@
     wineWow64Packages.waylandFull
     openrgb
     distrobox
+    mpv
+    kdePackages.kservice
   ];
 
   virtualisation = {
@@ -61,7 +62,6 @@
       "podman"
     ];
   };
-
 
   programs.nautilus-open-any-terminal.enable = true;
   programs.steam.enable = true;
