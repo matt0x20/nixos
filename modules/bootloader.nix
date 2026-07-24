@@ -15,11 +15,6 @@
     plymouth = {
       enable = true;
       theme = "spinner";
-      themePackages = with pkgs; [
-        (adi1090x-plymouth-themes.override {
-          selected_themes = [ "spinner" ];
-        })
-      ];
     };
 
     consoleLogLevel = 3;
