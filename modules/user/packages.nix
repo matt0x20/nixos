@@ -10,7 +10,6 @@
    ddcutil
    arrpc
    equibop
-   davinci-resolve-studio
   ];
 
   programs.home-manager.enable = true;
