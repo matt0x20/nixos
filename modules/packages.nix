@@ -28,7 +28,6 @@
     kdePackages.breeze-icons
     kdePackages.breeze
     darkly
-    nautilus
     xdg-desktop-portal
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
@@ -45,6 +44,5 @@
     winetricks
     wineWow64Packages.waylandFull
     openrgb
-    nemo
   ];
 }
