@@ -44,7 +44,7 @@
     winetricks
     wineWow64Packages.waylandFull
     openrgb
-    davinci-resolve-studio
+    distrobox
   ];
 
   programs.nautilus-open-any-terminal.enable = true;
