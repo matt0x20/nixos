@@ -9,5 +9,4 @@
   home.file.".config/kitty/kitty.conf".source = ../../.config/kitty/kitty.conf;
   home.file.".config/kitty/scroll_mark.py".source = ../../.config/kitty/scroll_mark.py;
   home.file.".config/kitty/search.py".source = ../../.config/kitty/search.py;
-  home.file.".config/matugen".source = ../../.config/matugen;
 }
