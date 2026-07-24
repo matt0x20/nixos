@@ -14,7 +14,9 @@ let
   };
 
   prefs = {
-
+    "zen.view.compact.hide-tabbar" = true;
+    "zen.view.use-single-toolbar" = false;
+    "zen.view.compact.enable-at-startup" = true;
   };
 
   extensions = [
@@ -22,12 +24,12 @@ let
     # the short ID in the url (like https://addons.mozilla.org/en-US/firefox/addon/!SHORT_ID!/)
     # Then go to https://addons.mozilla.org/api/v5/addons/addon/!SHORT_ID!/ to get the guid
     (extension "ublock-origin" "uBlock0@raymondhill.net")
-
+    (extension "sponsorblock" "sponsorBlocker@ajay.app")
   ];
 
 in
 {
-  environment.systemPackages = [
+  home.packages = [
     (pkgs.wrapFirefox
       inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.zen-browser-unwrapped
       {
