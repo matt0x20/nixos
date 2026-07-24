@@ -59,6 +59,7 @@
     shared-mime-info
     shared-mime-info
     desktop-file-utils
+    fuse
   ];
 
   virtualisation = {

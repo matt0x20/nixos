@@ -37,5 +37,6 @@
     expat
     libxcb
     libxkbcommon
+    fuse
   ];
 }
