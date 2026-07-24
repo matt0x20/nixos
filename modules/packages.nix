@@ -46,6 +46,19 @@
     distrobox
     mpv
     kdePackages.kservice
+    kdePackages.kio
+    kdePackages.kdf
+    kdePackages.kio-fuse
+    kdePackages.kio-extras
+    kdePackages.kio-admin
+    kdePackages.qtwayland
+    kdePackages.plasma-integration
+    kdePackages.kdegraphics-thumbnailers
+    kdePackages.breeze-icons
+    kdePackages.gwenview
+    shared-mime-info
+    shared-mime-info
+    desktop-file-utils
   ];
 
   virtualisation = {
