@@ -15,6 +15,7 @@
       ./modules/fonts.nix
       ./modules/bootloader.nix
       ./modules/fish.nix
+      ./modules/xdg-portal.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -29,15 +30,6 @@
       tree
     ];
     shell = pkgs.fish;
-  };
-
-  xdg.portal = {
-    enable = true;
-  
-    extraPortals = with pkgs; [
-      xdg-desktop-portal-gtk
-      xdg-desktop-portal-hyprland
-    ];
   };
 
   system.stateVersion = "26.05"; # DON'T TOUCH THIS
