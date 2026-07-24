@@ -40,8 +40,8 @@
         "green": "{{colors.primary.default.hex}}",
         "yellow": "{{colors.secondary.default.hex}}",
         "blue": "{{colors.tertiary.default.hex}}",
-        "magenta": "{{colors.primary_palette.key_color.hex}}",
-        "cyan": "{{colors.secondary_palette.key_color.hex}}",
+        "magenta": "{{colors.primary.default.hex}}",
+        "cyan": "{{colors.secondary.default.hex}}",
         "white": "{{colors.on_surface.default.hex}}"
       },
 
@@ -99,8 +99,8 @@
         "green": "{{colors.primary.default.hex}}",
         "yellow": "{{colors.secondary.default.hex}}",
         "blue": "{{colors.tertiary.default.hex}}",
-        "magenta": "{{colors.primary_palette.key_color.hex}}",
-        "cyan": "{{colors.secondary_palette.key_color.hex}}",
+        "magenta": "{{colors.primary.default.hex}}",
+        "cyan": "{{colors.secondary.default.hex}}",
         "white": "{{colors.on_surface.default.hex}}"
       },
 
