@@ -5,8 +5,16 @@
   ...
 }:
 let
+  extension = shortId: guid: {
+    name = guid;
+    value = {
+      install_url = "https://addons.mozilla.org/en-US/firefox/downloads/latest/${shortId}/latest.xpi";
+      installation_mode = "normal_installed";
+    };
+  };
+
   prefs = {
-    "widget.use-xdg-desktop-portal.file-picker" = 1;
+
   };
 
   extensions = [
