@@ -27,15 +27,26 @@
   systemd.services.nvidia-gpu-lock = {
     description = "Lock NVIDIA GPU Core and Memory Clocks";
     wantedBy = [ "multi-user.target" ];
-    
-    after = [ "display-manager.service" "nvpd.service" ];
-    
+
+    # Ensure the service runs after the NVIDIA driver is active
+    after = [ "display-manager.service" "nvidia-persistenced.service" ];
+    wants = [ "nvidia-persistenced.service" ];
+
+    # Inject the nvidia driver package binaries into this service's $PATH
+    path = [ 
+      config.hardware.nvidia.package 
+      config.hardware.nvidia.package.bin # Required for certain NixOS driver configurations
+    ];
+
     serviceConfig = {
       Type = "oneshot";
       RemainAfterExit = true;
       User = "root";
-    
-      ExecStart = "${config.hardware.nvidia.package}/bin/nvidia-smi -lgc 2100,2130";
     };
+
+    # Since 'path' provides the binary, you can call nvidia-smi directly
+    script = ''
+      nvidia-smi -lgc 2100,2130
+    '';
   };
 }
