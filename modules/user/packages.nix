@@ -11,6 +11,7 @@
    arrpc
    equibop
    anki-bin
+   alsa-scarlett-gui
   ];
 
    programs.obs-studio = {
