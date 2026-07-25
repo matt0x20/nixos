@@ -23,6 +23,7 @@
       "quiet"
       "rd.udev.log_level=3"
       "rd.systemd.show_status=auto"
+      "nvidia.NVreg_EnableGpuFirmware=0"
     ];
 
     loader.timeout = 0;

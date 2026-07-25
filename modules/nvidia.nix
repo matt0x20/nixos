@@ -18,9 +18,13 @@
     open = true;
     nvidiaSettings = true;
     package = config.boot.kernelPackages.nvidiaPackages.stable;
+
+    extraPackages = with pkgs; [
+      ocl-icd
+    ];
   };
 
   environment.sessionVariables = {
-  __GL_SYNC_TO_VBLANK = "0";
+    __GL_SYNC_TO_VBLANK = "0";
   };
 }
