@@ -23,4 +23,19 @@
   environment.sessionVariables = {
     __GL_SYNC_TO_VBLANK = "0";
   };
+
+  systemd.services.nvidia-gpu-lock = {
+    description = "Lock NVIDIA GPU Core and Memory Clocks";
+    wantedBy = [ "multi-user.target" ];
+    
+    after = [ "display-manager.service" "nvpd.service" ];
+    
+    serviceConfig = {
+      Type = "oneshot";
+      RemainAfterExit = true;
+      User = "root";
+    
+      ExecStart = "${config.hardware.nvidia.package}/bin/nvidia-smi -lgc 2100,2130";
+    };
+  };
 }
