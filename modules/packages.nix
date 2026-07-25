@@ -64,6 +64,7 @@
     desktop-file-utils
     fuse
     jq
+    ocl-icd
   ];
 
   virtualisation = {

@@ -18,10 +18,6 @@
     open = true;
     nvidiaSettings = true;
     package = config.boot.kernelPackages.nvidiaPackages.stable;
-
-    extraPackages = with pkgs; [
-      ocl-icd
-    ];
   };
 
   environment.sessionVariables = {

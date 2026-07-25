@@ -11,6 +11,7 @@
    arrpc
    equibop
    anki-bin
+   obs-studio
   ];
 
   programs.home-manager.enable = true;
