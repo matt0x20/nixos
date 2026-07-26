@@ -13,11 +13,12 @@
     dina-font
     proggyfonts
     adwaita-fonts
+    jetbrains-mono
   ];
 
-  fontconfig.defaultFonts = {
-    sansSerif = [ "Noto Sans CJK JP" "Adwaita Sans" ];
+  fonts.fontconfig.defaultFonts = {
+    sansSerif = [ "Noto Sans CJK JP" "Adwaita Sans Regular" ];
     serif = [ "Noto Serif CJK JP" "DejaVu Serif" ];
-    monospace = [ "Noto Sans Mono CJK JP" "Adwaita Mono" ];
+    # monospace = [ "Noto Sans Mono CJK JP" "JetBrains Mono" ];
   };
 }
