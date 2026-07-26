@@ -12,6 +12,7 @@
    equibop
    anki-bin
    alsa-scarlett-gui
+   cider-2
   ];
 
    programs.obs-studio = {
