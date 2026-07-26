@@ -52,4 +52,5 @@ hl.window_rule({
         initial_class = "cider",
     },
     render_unfocused = true,
+    no_blur = true,
 })
