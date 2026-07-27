@@ -13,6 +13,7 @@
    anki-bin
    alsa-scarlett-gui
    cider-2
+   lmstudio
   ];
 
    programs.obs-studio = {

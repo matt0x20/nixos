@@ -15,10 +15,4 @@
     adwaita-fonts
     jetbrains-mono
   ];
-
-  fonts.fontconfig.defaultFonts = {
-    sansSerif = [ "Noto Sans CJK JP" "Adwaita Sans Regular" ];
-    serif = [ "Noto Serif CJK JP" "DejaVu Serif" ];
-    # monospace = [ "Noto Sans Mono CJK JP" "JetBrains Mono" ];
-  };
 }
