@@ -65,6 +65,7 @@
     fuse
     jq
     ocl-icd
+    papirus-icon-theme
   ];
 
   virtualisation = {

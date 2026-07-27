@@ -11,7 +11,7 @@ contrast=4
 Color={{colors.surface.default.hex}}
 
 [Background:Alternate]
-Color={{colors.surface_container.default.hex}}
+Color={{colors.surface.default.hex}}
 
 [Background:Window]
 Color={{colors.surface.default.hex}}
