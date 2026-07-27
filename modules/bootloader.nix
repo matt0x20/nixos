@@ -15,10 +15,9 @@
     plymouth = {
       enable = true;
       theme = "spinner";
-      logo = pkgs.fetchurl {
-        url = "https://nixos.org/logo/nixos-hires.png";
-        sha256 = "1ivzgd7iz0i06y36p8m5w48fd8pjqwxhdaavc0pxs7w1g7mcy5si";
-      };
+      logo = pkgs.runCommand "logo.png" {} ''
+        cp ${pkgs.nixos-icons}/share/icons/hicolor/48x48/apps/nix-snowflake-white.png $out
+      '';
     };
 
     consoleLogLevel = 3;
