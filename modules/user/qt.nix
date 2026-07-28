@@ -3,6 +3,6 @@
 {
   qt = {
     enable = true;
-    platformTheme.name = "qt6ct";
+    platformTheme.name = "qt5ct";
   };
 }

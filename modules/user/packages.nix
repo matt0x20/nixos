@@ -14,10 +14,6 @@
     cider-2
     lmstudio
     discord-ptb
-
-    (pkgs.anki.withAddons [
-      pkgs.ankiAddons.review-heatmap
-    ])
   ];
 
   programs.obs-studio = {
