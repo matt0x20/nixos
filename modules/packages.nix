@@ -57,6 +57,7 @@
     kdePackages.breeze-icons
     kdePackages.gwenview
     kdePackages.kimageformats
+    kdePackages.ark
     qt6.qtimageformats
     libraw
     shared-mime-info
@@ -66,6 +67,7 @@
     jq
     ocl-icd
     papirus-icon-theme
+    p7zip
   ];
 
   virtualisation = {
