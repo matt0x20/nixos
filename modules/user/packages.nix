@@ -14,6 +14,7 @@
     cider-2
     lmstudio
     discord-ptb
+    blender
   ];
 
   programs.obs-studio = {
