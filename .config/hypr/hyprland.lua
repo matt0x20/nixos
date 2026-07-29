@@ -1,3 +1,4 @@
+require("modules.globals")
 require("modules.monitors")
 require("modules.execs")
 require("modules.env")

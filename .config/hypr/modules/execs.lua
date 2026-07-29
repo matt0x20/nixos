@@ -2,10 +2,6 @@
 ---- AUTOSTART ----
 -------------------
 
-local shell       = "noctalia"
-local polkit      = "systemctl start --user polkit-gnome-authentication-agent-1"
-local kdeconnect  = "sleep 5 && kdeconnect-indicator"
-
 hl.on("hyprland.start", function () 
     hl.exec_cmd(shell)
     hl.exec_cmd(polkit)
