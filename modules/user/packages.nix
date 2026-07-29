@@ -14,7 +14,7 @@
     cider-2
     lmstudio
     discord-ptb
-    blender
+    (pkgs.blender.override { cudaSupport = true; })
   ];
 
   programs.obs-studio = {
