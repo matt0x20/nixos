@@ -23,6 +23,7 @@
       "rd.udev.log_level=3"
       "rd.systemd.show_status=auto"
       "nvidia.NVreg_EnableGpuFirmware=0"
+      "acpi_enforce_resources=lax"
     ];
 
     loader.timeout = 0;

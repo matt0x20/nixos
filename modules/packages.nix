@@ -42,7 +42,6 @@
     wineWow64Packages.staging
     winetricks
     wineWow64Packages.waylandFull
-    openrgb
     distrobox
     mpv
     kdePackages.kservice
@@ -51,6 +50,7 @@
     kdePackages.kio-fuse
     kdePackages.kio-extras
     kdePackages.kio-admin
+    kdePackages.kio-gdrive
     kdePackages.qtwayland
     kdePackages.plasma-integration
     kdePackages.kdegraphics-thumbnailers
@@ -68,6 +68,8 @@
     ocl-icd
     papirus-icon-theme
     p7zip
+    i2c-tools
+    openrgb
   ];
 
   virtualisation = {
@@ -89,4 +91,5 @@
   programs.steam.enable = true;
   programs.firefox.enable = true;
   programs.hyprland.enable = true;
+  services.hardware.openrgb.enable = true;
 }

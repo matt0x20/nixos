@@ -25,7 +25,7 @@
   users.users.matt = {
     isNormalUser = true;
     description = "Matt";
-    extraGroups = [ "wheel" ];
+    extraGroups = [ "wheel" "i2c" ];
     packages = with pkgs; [
       tree
     ];

@@ -14,3 +14,4 @@ power = "noctalia msg panel-toggle session"
 shell       = "noctalia"
 polkit      = "systemctl start --user polkit-gnome-authentication-agent-1"
 kdeconnect  = "sleep 5 && kdeconnect-indicator"
+openrgb     = 'sleep 5 && openrgb --startminimized --profile "main.orp"'
