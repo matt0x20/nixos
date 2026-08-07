@@ -18,6 +18,8 @@
       url = "github:youwen5/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    helium.url = "github:schembriaiden/helium-browser-nix-flake";
   };
 
   outputs = inputs@{ self, nixpkgs, home-manager, ... }: {

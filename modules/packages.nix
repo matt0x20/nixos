@@ -70,6 +70,7 @@
     p7zip
     i2c-tools
     openrgb
+    android-tools
   ];
 
   virtualisation = {

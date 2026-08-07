@@ -15,6 +15,7 @@
     lmstudio
     discord-ptb
     (pkgs.blender.override { cudaSupport = true; })
+    inputs.helium.packages.${system}.default
   ];
 
   programs.obs-studio = {

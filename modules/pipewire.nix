@@ -10,4 +10,10 @@
     pulse.enable = true;
     jack.enable = true;
   };
+
+  services.pipewire.wireplumber.extraConfig."51-disable-ducking" = {
+    "wireplumber.settings" = {
+      "node.stream.ducking" = false;
+    };
+  };
 }
