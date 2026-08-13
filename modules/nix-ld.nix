@@ -38,5 +38,9 @@
     libxcb
     libxkbcommon
     fuse
+    icu
+    dotnet-sdk
+    libice
+    libsm
   ];
 }

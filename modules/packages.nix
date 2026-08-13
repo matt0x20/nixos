@@ -71,6 +71,7 @@
     i2c-tools
     openrgb
     android-tools
+    dotnet-sdk
   ];
 
   virtualisation = {
@@ -87,6 +88,11 @@
       "podman"
     ];
   };
+
+  programs.gamescope = {
+    enable = true;
+    enableWsi = true;
+  };  
 
   programs.nautilus-open-any-terminal.enable = true;
   programs.steam.enable = true;
