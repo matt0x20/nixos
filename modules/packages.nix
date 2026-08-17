@@ -72,6 +72,7 @@
     openrgb
     android-tools
     dotnet-sdk
+    playerctl
   ];
 
   virtualisation = {
