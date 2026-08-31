@@ -9,6 +9,7 @@
     ./modules/user/sources.nix
     ./modules/user/zen.nix
     ./modules/user/fonts.nix
+    ./modules/user/noctalia
   ];
 
   home.username = "matt";

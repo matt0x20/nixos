@@ -18,7 +18,6 @@
     inputs.helium.packages.${system}.default
     prismlauncher
     anydesk
-    inputs.caelestia-shell.packages.${pkgs.stdenv.hostPlatform.system}.with-cli
   ];
 
   programs.obs-studio = {

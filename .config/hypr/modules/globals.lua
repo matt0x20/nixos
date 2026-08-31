@@ -11,7 +11,7 @@ clipboard = "noctalia msg panel-toggle clipboard"
 lock = "noctalia msg session lock"
 power = "noctalia msg panel-toggle session"
 
-shell       = "caelestia shell -d"
+shell       = "noctalia"
 polkit      = "systemctl start --user polkit-gnome-authentication-agent-1"
 kdeconnect  = "sleep 5 && kdeconnect-indicator"
 openrgb     = 'sleep 5 && openrgb --startminimized --profile "main.orp"'
