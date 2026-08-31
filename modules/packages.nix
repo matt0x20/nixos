@@ -75,6 +75,7 @@
     playerctl
     killall
     libnotify
+    ffmpeg
   ];
 
   virtualisation = {
