@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -uo pipefail
+# no `set -e` on the whole script — we handle ffmpeg failures ourselves and clean up
 
 LOG=/tmp/dolphin-flac-audio.log
 notify() {
@@ -31,6 +32,7 @@ for input in "$@"; do
         continue
     fi
 
+    # if the target name is already taken by something other than the input, don't risk overwriting it
     if [[ "$final" != "$input" && -e "$final" ]]; then
         rm -f "$tmp"
         notify "Audio → FLAC — error" "$final already exists, $input left untouched"
@@ -39,11 +41,10 @@ for input in "$@"; do
 
     mv -f -- "$tmp" "$final"
 
+    # extension change (e.g. .mp4 -> .mkv) leaves the original on disk - clean it up only now
     if [[ "$final" != "$input" && -e "$input" ]]; then
         rm -f -- "$input"
     fi
 
     notify "Audio → FLAC" "Replaced: $final"
 done
-
-# thx claude
