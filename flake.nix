@@ -31,7 +31,6 @@
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       modules = [
         ./configuration.nix
-        ./caelestia.nix
 
 	      home-manager.nixosModules.default
 
