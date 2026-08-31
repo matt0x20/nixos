@@ -16,7 +16,6 @@
       ./modules/bootloader.nix
       ./modules/fish.nix
       ./modules/xdg-portal.nix
-      ./modules/searxng.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
