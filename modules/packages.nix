@@ -87,6 +87,9 @@
     };
   };
 
+  virtualisation.docker.enable = true;
+  virtualisation.oci-containers.backend = "docker";
+
   users.users.matt = {
     extraGroups = [
       "podman"
