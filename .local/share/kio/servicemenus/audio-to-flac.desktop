@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Service
+MimeType=video/*;
+Actions=audioToFlac;
+
+[Desktop Action audioToFlac]
+Name=Audio → FLAC (replace original)
+Icon=audio-x-flac
+Exec=/home/matt/.local/bin/dolphin-audio-to-flac.sh %F
