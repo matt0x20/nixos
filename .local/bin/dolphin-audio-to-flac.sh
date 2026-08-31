@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -uo pipefail
+# no `set -e` on the whole script — we handle ffmpeg failures ourselves and clean up
 
 LOG=/tmp/dolphin-flac-audio.log
 notify() {
@@ -9,10 +10,9 @@ notify() {
 for input in "$@"; do
     dir=$(dirname -- "$input")
     base=$(basename -- "$input")
-    name="${base%.*}"
-    final="${dir}/${name}.mkv"
+    ext="${base##*.}"
 
-    tmp=$(mktemp --suffix=.mkv -p "$dir" ".dolphin-flac-XXXXXX") || {
+    tmp=$(mktemp --suffix=".$ext" -p "$dir" ".dolphin-flac-XXXXXX") || {
         notify "Audio → FLAC — error" "Could not create a temp file for $input"
         continue
     }
@@ -21,7 +21,7 @@ for input in "$@"; do
         -map 0 -c:v copy -c:a flac -c:s copy -c:d copy -c:t copy \
         "$tmp" >>"$LOG" 2>&1; then
         rm -f "$tmp"
-        notify "Audio → FLAC — error" "$input left untouched. Log: $LOG"
+        notify "Audio → FLAC — error" "$input left untouched (container may not support FLAC). Log: $LOG"
         continue
     fi
 
@@ -31,19 +31,6 @@ for input in "$@"; do
         continue
     fi
 
-    if [[ "$final" != "$input" && -e "$final" ]]; then
-        rm -f "$tmp"
-        notify "Audio → FLAC — error" "$final already exists, $input left untouched"
-        continue
-    fi
-
-    mv -f -- "$tmp" "$final"
-
-    if [[ "$final" != "$input" && -e "$input" ]]; then
-        rm -f -- "$input"
-    fi
-
-    notify "Audio → FLAC" "Replaced: $final"
+    mv -f -- "$tmp" "$input"   # atomic replace, same container/name
+    notify "Audio → FLAC" "Replaced: $input"
 done
-
-# thx claude
