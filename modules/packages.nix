@@ -74,6 +74,7 @@
     dotnet-sdk
     playerctl
     killall
+    libnotify
   ];
 
   virtualisation = {
