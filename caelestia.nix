@@ -1,6 +1,7 @@
 { config, pkgs, inputs, ... }:
 
 {
+  home-manager.users.foobar = {
   imports = [
     inputs.caelestia.homeModules.default
   ];
@@ -28,4 +29,5 @@
       };
     };
   };
+  }
 }
