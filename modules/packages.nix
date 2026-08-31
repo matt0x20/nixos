@@ -73,6 +73,7 @@
     android-tools
     dotnet-sdk
     playerctl
+    killall
   ];
 
   virtualisation = {
