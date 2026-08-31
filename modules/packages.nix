@@ -74,7 +74,6 @@
     dotnet-sdk
     playerctl
     killall
-    inputs.caelestia-shell.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
   virtualisation = {
