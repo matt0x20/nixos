@@ -96,6 +96,13 @@
     enableWsi = true;
   };  
 
+  programs.nh = {
+    enable = true;
+    clean.enable = true;
+    clean.extraArgs = "--keep-since 4d --keep 3";
+    flake = "/etc/nixos";
+  };
+
   programs.nautilus-open-any-terminal.enable = true;
   programs.steam.enable = true;
   programs.firefox.enable = true;
