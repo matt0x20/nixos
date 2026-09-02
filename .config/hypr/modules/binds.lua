@@ -17,6 +17,7 @@ hl.bind("CTRL + Print", hl.dsp.exec_cmd(regionScreenshot))
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(clipboard))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(lock))
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd(power))
+hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ action = "fullscreen", mode = "toggle" })
 
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
