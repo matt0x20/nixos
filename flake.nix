@@ -49,19 +49,6 @@
 
           home-manager.users.matt = import ./home.nix;
         }
-
-        illogical-flake.homeManagerModules.default
-        {
-          programs.illogical-impulse = {
-            enable = true;
-
-            dotfiles = {
-              fish.enable = true;     
-              kitty.enable = false;    
-              starship.enable = false;
-            };
-          };
-        }
       ];
     };
 

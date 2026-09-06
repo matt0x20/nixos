@@ -16,4 +16,9 @@
   home.homeDirectory = "/home/matt";
 
   home.stateVersion = "26.05";
+
+  imports = [
+    inputs.illogical-flake.homeManagerModules.default
+  ]
+  programs.illogical-impulse.enable = true;
 }
