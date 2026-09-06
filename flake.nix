@@ -32,7 +32,7 @@
     helium.url = "github:schembriaiden/helium-browser-nix-flake";
   };
 
-  outputs = inputs@{ self, nixpkgs, home-manager, illogical-flake, ... }: {
+  outputs = inputs@{ self, nixpkgs, home-manager, ... }: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       modules = [
         ./configuration.nix
