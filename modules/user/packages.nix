@@ -19,6 +19,8 @@
     inputs.ambxst.packages.${stdenv.hostPlatform.system}.default
     prismlauncher
     anydesk
+    losslesscut
+    protontricks
   ];
 
   programs.obs-studio = {
