@@ -113,4 +113,6 @@
   programs.firefox.enable = true;
   programs.hyprland.enable = true;
   services.hardware.openrgb.enable = true;
+  services.geoclue2.enable = true;  # For QtPositioning
+  services.networkmanager.enable = true;  # For network management
 }

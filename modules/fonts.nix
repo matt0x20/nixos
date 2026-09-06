@@ -14,5 +14,8 @@
     proggyfonts
     adwaita-fonts
     jetbrains-mono
+    rubik
+    nerd-fonts.ubuntu
+    nerd-fonts.jetbrains-mono
   ];
 }
