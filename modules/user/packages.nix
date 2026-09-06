@@ -16,6 +16,7 @@
     discord-ptb
     (pkgs.blender.override { cudaSupport = true; })
     inputs.helium.packages.${stdenv.hostPlatform.system}.default
+    inputs.ambxst.packages.${stdenv.hostPlatform.system}.default
     prismlauncher
     anydesk
   ];

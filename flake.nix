@@ -19,6 +19,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    ambxst = {
+      url = "github:Axenide/ambxst";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     helium.url = "github:schembriaiden/helium-browser-nix-flake";
   };
 
