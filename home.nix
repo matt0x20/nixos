@@ -10,7 +10,6 @@
     ./modules/user/zen.nix
     ./modules/user/fonts.nix
     ./modules/user/noctalia.nix
-    ./modules/user/mpd.nix
   ];
 
   home.username = "matt";

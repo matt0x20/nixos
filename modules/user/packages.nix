@@ -21,6 +21,7 @@
     anydesk
     losslesscut
     protontricks
+    kew
   ];
 
   programs.obs-studio = {
