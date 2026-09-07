@@ -7,7 +7,6 @@ local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
 
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
-
 hl.bind(mainMod .. " + B", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
 
