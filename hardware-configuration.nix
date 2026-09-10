@@ -39,12 +39,12 @@
   fileSystems."/mnt/OV2" = {
     device = "/dev/disk/by-uuid/C690-A678";
     fsType = "exfat";
-    options = [ "defaults" "nofail" "x-gvfs-show" "users" ];
+    options = [ "uid=1000" "gid=100" "umask=000" "defaults" "nofail" "x-gvfs-show" "users" ];
   };
 
   fileSystems."/mnt/LEXAR" = {
     device = "/dev/disk/by-uuid/670B-C62C";
     fsType = "exfat";
-    options = [ "defaults" "nofail" "x-gvfs-show" "users" ];
+    options = [ "uid=1000" "gid=100" "umask=000" "defaults" "nofail" "x-gvfs-show" "users" ];
   };
 }

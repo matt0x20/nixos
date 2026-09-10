@@ -6,7 +6,7 @@
     interactiveShellInit = ''
       set fish_greeting # Disable greeting
       alias nhs="nh os switch"
-      alias nhb="nh os build"
+      alias nhb="nh os boot"
       alias nfu="nix flake update"
       alias ..='cd ..'
       alias ...='cd ../..'
